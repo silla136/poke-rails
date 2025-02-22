@@ -5,12 +5,9 @@
   justify-content: space-between;
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 10px solid #f7d25e;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  border: 12px solid #f7d25e;
   background-size: 200% 200%;
-  position: relative;
-  color: #fff;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
-    background-position 0.2s ease-in-out, border-color 0.2s ease-in-out;
 
   &:hover {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -19,30 +16,16 @@
 
   img {
     width: 100%;
-    max-height: 15rem;
+    max-height: 25rem;
     object-fit: contain;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
   a {
-    color: $yellow;
     text-decoration: none;
+    color: $yellow;
     &:hover {
       text-decoration: none;
     }
-  }
-
-  .trainer-card-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-  }
-
-  .btn {
-    z-index: 3;
   }
 }
